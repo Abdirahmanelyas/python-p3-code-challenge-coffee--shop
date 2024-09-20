@@ -1,35 +1,73 @@
-Coffee Shop OOP Assignment ☕️
-Welcome to the Coffee Shop OOP project! In this task, you'll model the relationships between Customers, Coffees, and Orders using Python’s Object-Oriented Programming (OOP) principles.
+# COFFEE SHOP
 
-##Project Overview
-Models:
-Customer: Can place many orders.
-Coffee: Can be ordered by many customers.
-Order: Connects a customer with a coffee and its price.
-Key OOP Concepts: Classes, methods, object relationships, and data validation.
-##Project Setup
-Clone the repository:https://github.com/Abdirahmanelyas/python-p3-code-challenge-coffee--shop
+## Overview
+This project simulates a simple coffee shop management system using Object-Oriented Programming (OOP) in Python. It includes three main classes:
+
+- Customer
+- Coffee
+- Order
+
+The relationships between these models are as follows:
+
+- A Customer can have multiple Orders.
+- A Coffee can be part of multiple Orders.
+- An Order is associated with both a Customer and a Coffee.
+
+## Features
+- Customer Management: Create and manage customers, track their orders, and identify the customer who has spent the most on a specific coffee.
+- Coffee Management: Create coffee types, track orders for each coffee, and calculate the number of orders and average price for each coffee.
+- Order Management: Link customers and coffee with a price, ensuring data integrity and enabling various queries.
+
+## Getting Started
+### Requirements
+- Python 3.x installed on your machine.
+- An IDE or text editor of your choice (such as VS Code, PyCharm, or Sublime Text).
+
+### Installation
+1. Clone the Repository
 
 bash
-Copy code
-git clone 
-cd coffee-shop-oop
-Create and activate virtual environment:
+git clone https://github.com/Abdirahmanelyas/python-p3-code-challenge-coffee--shop
 
+
+cd Phase3-code-challenge-coffee--shop
+
+
+2. Create a Virtual Environment
 bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate  # On Windows, use venv\Scripts\activate
-Install dependencies:
+python -m venv venv
 
-contributing
-feel free to submit pull requests if you find any improvements or issues.
+3. Activate the Virtual Environment
+- On Windows:
+bash
+venv\Scripts\activate
 
-License
- This project  is licenced under MIT licence
+- On macOS/Linux:
+bash
+source venv/bin/activate
 
- Author
- Abdirahman ELyas
 
- Acknowledgement
- This assesment was created to demonstrate object realtionships in python programming skills !
+4. Create Project Files and Folders
+- Organize your project structure as follows:
+css
+coffee_shop/
+├── models/
+│   ├── coffee.py
+│   ├── customer.py
+│   └── order.py
+├── venv/
+├── requirements.txt
+├── README.md
+
+5. Install Dependencies
+
+There are no external dependencies for this project. If you add any in the future, you can use a requirements.txt file to list them.
+
+## Contributing
+Feel free to contribute to this project by submitting issues, pull requests, or suggestions. Please follow standard Git workflow practices.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+[Abdirahman Elyas](https://github.com/Abdirahman Elyas)
